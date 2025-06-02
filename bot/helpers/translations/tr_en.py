@@ -7,9 +7,9 @@ class EN(object):
 #
 #----------------
     WELCOME_MSG = "Hello {} Sir"
-    START_DOWNLOAD = "Please wait...."
-    ANTI_SPAM_WAIT = "Wait for the current task to complete..!"
-    TASK_COMPLETED = "ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴏᴍᴘʟᴇᴛᴇᴅ\n@jalan_tikuz"   
+    START_DOWNLOAD = "Please Wait....."
+    ANTI_SPAM_WAIT = "Wait for the current task to complete!"
+    TASK_COMPLETED = "ᴅᴏᴡɴʟᴏᴅ ᴄᴏᴍᴘʟᴇᴛᴇᴅ\n@trakteran"   
     SONG_COPY_EXIST = 'Song already downloaded exist'
     SONG_COPY_EXIST_INFO = """
 <b>ITEM NO - {}</b>
@@ -41,7 +41,7 @@ Quality : {}
     # DEEZER
     DEEZER_NOT_AUTH = "Deezer credentials not provided"
     # QOBUZ
-    QOBUZ_NOT_AUTH = "Ripping Qobuz Here @qobuzz"
+    QOBUZ_NOT_AUTH = "Qobuz credentials not provided"
     # SPOTIFY
     SPOTIFY_NOT_AUTH = "Spotify credentials not provided"
 
@@ -53,17 +53,21 @@ Quality : {}
 #
 #----------------
     ALBUM_TEMPLATE = """
-● <b>ᴀʟʙᴜᴍ :</b> <i>{title}</i>
-● <b>ᴀʀᴛɪꜱᴛ :</b> <i>{artist}</i>
-● <b>ʀᴇʟᴇᴀꜱᴇ :</b> <i>{date}</i>
-● <b>ᴛᴏᴛᴀʟ ᴛʀᴀᴄᴋꜱ : <i></b>{totaltracks}</i>
-● <b>Qᴜᴀʟɪᴛʏ :</b> <i>{quality}</i>
-● <b>ᴘʟᴀᴛꜰᴏʀᴍ :</b> <i>{provider}</i>
+👤 <b>ᴀʀᴛɪꜱᴛ :</b> <code>{artist}</code>
+🎵 <b>ᴀʟʙᴜᴍ :</b> <code>{title}</code>
+📅 <b>ʀᴇʟᴇᴀꜱᴇ :</b> <code>{date}</code>
+🔢 <b>ᴛᴏᴛᴀʟ ᴛʀᴀᴄᴋꜱ :</b> <code>{totaltracks}</code>
+💽 <b>Qᴜᴀʟɪᴛʏ :</b> <code>{quality}</code>
+🅿️ <b>ᴘʟᴀᴛꜰᴏʀᴍ :</b> <code>{provider}</code>
 """
+
+    # For keeping the fancy designs
+    USER_MENTION_ALBUM = "🐰 <b>ᴅᴏᴡɴʟᴏᴀᴅ ʙʏ :</b> {}"
+    USER_MENTION_TRACK = "ᴅᴏᴡɴʟᴏᴀᴅ ʙʏ {}"
 
     # The caption on the uploaded audio file in Telegram
     # Keep it blank for no captions
-    TRACK_TEMPLATE = ""
+    TRACK_TEMPLATE = "<code>{title}</code>\n<code>{quality}</code>"
 
     
 
